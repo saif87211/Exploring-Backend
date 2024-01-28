@@ -9,7 +9,7 @@
 		"ghcr.io/devcontainers-contrib/features/express-generator:2": {},
 		"ghcr.io/devcontainers-contrib/features/npm-package:1": {},
 		"ghcr.io/jayree/devcontainer-features/npm-registry:1": {}
-	}
+	},
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
@@ -21,7 +21,20 @@
 	// "postCreateCommand": "yarn install",
 
 	// Configure tool-specific properties.
-	// "customizations": {},
+	"customizations": {
+		"vscode":{
+			"extensions": [
+				"mgmcdermott.vscode-language-babel",
+				"hiteshchoudharycode.chai-theme",
+				"dbaeumer.vscode-eslint",
+				"xabikos.javascriptsnippets",
+				"yzhang.markdown-all-in-one",
+				"bierner.markdown-preview-github-styles",
+				"pkief.material-icon-theme",
+				"rangav.vscode-thunder-client"
+			]
+		}
+	}
 
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
